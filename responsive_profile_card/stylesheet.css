@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 244, 1);
+}
+
+#box {
+    height: 336px;
+    width: 279px;
+    position: relative;
+    top: 131px;
+    left: 177px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+#box2 {
+    height: 35%;
+    width: 100%;
+    
+    background-color: rgb(63, 113, 230);
+    border-radius: 25px 25px 0px 0px;
+}
+#circle {
+    background-color: rgb(63, 113, 230);
+    height: 35%;
+    width: 40%;
+    border-radius: 200px;
+    position: relative;
+    bottom: 90px;
+    left: 80px;
+}
+#photocircle {
+    background-color: rgb(190, 23, 23);
+    height: 92%;
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 200px; 
+    position: relative;
+    left: 4px;
+    top: 3px;
+}
