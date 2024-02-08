@@ -30,7 +30,6 @@
     left: 80px;
 }
 #photocircle {
-    background-color: rgb(190, 23, 23);
     height: 92%;
     width: 90%;
     border: 2px solid white;
@@ -38,4 +37,6 @@
     position: relative;
     left: 4px;
     top: 3px;
+    background-image: url(https://i.pinimg.com/originals/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg);
+    background-size: cover;
 }
