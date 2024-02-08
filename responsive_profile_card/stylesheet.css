@@ -40,3 +40,17 @@
     background-image: url(https://i.pinimg.com/originals/6b/7e/d6/6b7ed698713c09ad9e6afc7dcb996a09.jpg);
     background-size: cover;
 }
+#text {
+    text-align: center;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    bottom: 80px;
+}
+#text2 {
+    text-align: center;
+    background-color: white;
+    position: relative;
+    bottom: 75px;
+}
