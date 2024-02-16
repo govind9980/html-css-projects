@@ -33,15 +33,23 @@
     </style>
 </head>
 <body>
-    <button id="btn1" onclick="">Add to Bag</button>
+    <button id="btn1" onclick="quantity = quantity + 1;
+    document.querySelector('#summary').innerText = `your bag has ${quantity} items`;
+    ">Add to Bag</button>
 
-    <Button id="btn2">move to  WISHLIST</Button>
+    <Button id="btn2" onclick="quantity = quantity - 1;
+    document.querySelector('#summary').innerText = `your bag has ${quantity} items`;
+    ">move to  WISHLIST</Button>
 
-    <Button id="btn3">add 1+1 sale item</Button>
+    <Button id="btn3" onclick="quantity = quantity + 2;
+    document.querySelector('#summary').innerText = `your bag has ${quantity} items`;
+    ">add 1+1 sale item</Button>
 
     <h1 id="summary"></h1>
 
     <script>
+        let quantity = 0;
+        document.querySelector('#summary').innerText = `your bag has ${quantity} items`;
 
     </script>
 </body>
