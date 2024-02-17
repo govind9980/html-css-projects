@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#calbox {
+    height: 400px;
+    width: 250px;
+    border: 2px solid grey;
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+
+#inputbox {
+    height: 10%;
+    width: 80%;
+    border: 2px solid grey;
+    position: relative;
+    left: 23px;
+    top: 10px;
+}
