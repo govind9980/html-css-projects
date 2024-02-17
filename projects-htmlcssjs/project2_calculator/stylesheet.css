@@ -4,7 +4,7 @@
 }
 
 #calbox {
-    height: 350px;
+    height: 430px;
     width: 200px;
     border: 2px solid grey;
     position: relative;
@@ -30,6 +30,6 @@
 .button {
     height: 50px;
     width: 50px;
-    margin-left: 5px;
+    margin: 5px;
     
 }
