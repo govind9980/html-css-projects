@@ -4,8 +4,8 @@
 }
 
 #calbox {
-    height: 400px;
-    width: 250px;
+    height: 350px;
+    width: 200px;
     border: 2px solid grey;
     position: relative;
     left: 200px;
@@ -13,10 +13,23 @@
 }
 
 #inputbox {
-    height: 10%;
-    width: 80%;
+    height: 8%;
+    width: 94%;
     border: 2px solid grey;
-    position: relative;
-    left: 23px;
-    top: 10px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    
 }
