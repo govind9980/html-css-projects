@@ -19,30 +19,24 @@
     console.log(randomChoice)
     if (randomChoice > 0 && randomChoice <= 1) {
         computerChoice = 'Bat';
-        console.log('you chose bat and computer chose bat');
+        yourChoice = 'you chose bat and computer chose bat';
     } else if (randomChoice > 1 && randomChoice <= 2) {
         computerChoice = 'Ball'
-        console.log('you chose bat and computer chose ball');
+        yourChoice = 'you chose bat and computer chose ball';
     } else {
         computerChoice = 'Stump';
-        console.log('you chose bat and computer chose Stump');
+        yourChoice = 'you chose bat and computer chose Stump';
     }
 
     if (computerChoice === 'Bat') {
-        console.log('its a tie');
+        result = 'its a tie';
     } else if (computerChoice === 'Ball') {
-        console.log('user won');
+        result = 'user won';
     } else if (computerChoice === 'Stump') {
-        console.log('computer won');
+        result = 'computer won';
     }
 
-    
-    
-    
-    
-    
-    
-    
+    alert(`${yourChoice}   ${result}`);
     ">Bat</button>
     <button>Ball</button>
     <button>Stump</button>
