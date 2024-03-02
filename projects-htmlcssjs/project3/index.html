@@ -38,8 +38,58 @@
 
     alert(`${yourChoice}   ${result}`);
     ">Bat</button>
-    <button>Ball</button>
-    <button>Stump</button>
+
+    <button onclick="
+    let randomChoice = Math.random() * 3;
+    let computerChoice;
+    console.log(randomChoice)
+    if (randomChoice > 0 && randomChoice <= 1) {
+        computerChoice = 'Bat';
+        yourChoice = 'you chose Ball and computer chose bat';
+    } else if (randomChoice > 1 && randomChoice <= 2) {
+        computerChoice = 'Ball'
+        yourChoice = 'you chose Ball and computer chose ball';
+    } else {
+        computerChoice = 'Stump';
+        yourChoice = 'you chose Ball and computer chose Stump';
+    }
+
+    if (computerChoice === 'Bat') {
+        result = 'its a tie';
+    } else if (computerChoice === 'Ball') {
+        result = 'user won';
+    } else if (computerChoice === 'Stump') {
+        result = 'computer won';
+    }
+
+    alert(`${yourChoice}   ${result}`);
+    ">Ball</button>
+
+    <button onclick="
+    let randomChoice = Math.random() * 3;
+    let computerChoice;
+    console.log(randomChoice)
+    if (randomChoice > 0 && randomChoice <= 1) {
+        computerChoice = 'Bat';
+        yourChoice = 'you chose stump and computer chose bat';
+    } else if (randomChoice > 1 && randomChoice <= 2) {
+        computerChoice = 'Ball'
+        yourChoice = 'you chose stump and computer chose ball';
+    } else {
+        computerChoice = 'Stump';
+        yourChoice = 'you chose stump and computer chose Stump';
+    }
+
+    if (computerChoice === 'Bat') {
+        result = 'its a tie';
+    } else if (computerChoice === 'Ball') {
+        result = 'user won';
+    } else if (computerChoice === 'Stump') {
+        result = 'computer won';
+    }
+
+    alert(`${yourChoice}   ${result}`);
+    ">Stump</button>
 
     <script>
 
