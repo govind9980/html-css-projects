@@ -14,9 +14,10 @@
 <body>
     <h1>Bat Ball Stump Game</h1>
     <button onclick="
-    randomChoice = Math.random() * 3;
-    computerChoice;
-    console.log(randomChoice)
+    let randomChoice = Math.random() * 3;
+    let computerChoice;
+    let yourChoice;
+    let result;
     if (randomChoice > 0 && randomChoice <= 1) {
         computerChoice = 'Bat';
         yourChoice = 'you chose bat and computer chose bat';
@@ -35,14 +36,15 @@
     } else if (computerChoice === 'Stump') {
         result = 'computer won';
     }
+    console.log(`${yourChoice}   ${result}`);
 
     alert(`${yourChoice}   ${result}`);
+
     ">Bat</button>
 
     <button onclick="
     randomChoice = Math.random() * 3;
-    computerChoice;
-    console.log(randomChoice)
+    
     if (randomChoice > 0 && randomChoice <= 1) {
         computerChoice = 'Bat';
         yourChoice = 'you chose Ball and computer chose bat';
@@ -55,20 +57,21 @@
     }
 
     if (computerChoice === 'Bat') {
-        result = 'its a tie';
-    } else if (computerChoice === 'Ball') {
-        result = 'user won';
-    } else if (computerChoice === 'Stump') {
         result = 'computer won';
+    } else if (computerChoice === 'Ball') {
+        result = 'its tie';
+    } else if (computerChoice === 'Stump') {
+        result = 'user won';
     }
 
+    console.log(`${yourChoice}   ${result}`);
+
     alert(`${yourChoice}   ${result}`);
+
     ">Ball</button>
 
     <button onclick="
-    let randomChoice = Math.random() * 3;
-    let computerChoice;
-    console.log(randomChoice)
+   randomChoice = Math.random() * 3;
     if (randomChoice > 0 && randomChoice <= 1) {
         computerChoice = 'Bat';
         yourChoice = 'you chose stump and computer chose bat';
@@ -88,7 +91,10 @@
         result = 'computer won';
     }
 
+    console.log(`${yourChoice}   ${result}`);
+
     alert(`${yourChoice}   ${result}`);
+    
     ">Stump</button>
 
     <script>
@@ -98,3 +104,6 @@
 </body>
 
 </html>
+
+
+
