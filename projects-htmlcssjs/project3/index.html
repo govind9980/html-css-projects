@@ -32,6 +32,11 @@
     ">Stump</button>
 
     <script>
+        let saveScore = {
+            win: 0,
+            lost: 0,
+            tie: 0,
+        };
         function generateRandomChoice() {
             let randomChoice = Math.random() * 3;
 
@@ -47,27 +52,36 @@
         function getResult(userMove, computerMove) {
             if (userMove === 'bat') {
                 if (computerMove === 'Bat') {
+                    saveScore.tie++;
                     return 'its a tie';
                 } else if (computerMove === 'Ball') {
+                    saveScore.win++;
                     return 'user won';
                 } else if (computerMove === 'Stump') {
+                    saveScore.lost++;
                     return 'computer won';
                 }
             } else if (userMove === 'ball') {
                 if (computerMove === 'Bat') {
+                    saveScore.lost++;
                     return 'computer won';
                 } else if (computerMove === 'Ball') {
+                    saveScore.tie++;
                     return 'its tie';
                 } else if (computerMove === 'Stump') {
+                    saveScore.win++;
                     return 'user won';
                 }
 
             } else if (userMove === 'stump') {
                 if (computerMove === 'Bat') {
+                    saveScore.tie++;
                     return 'its a tie';
                 } else if (computerMove === 'Ball') {
+                    saveScore.win++;
                     return 'user won';
                 } else if (computerMove === 'Stump') {
+                    saveScore.lost++;
                     return 'computer won';
                 }
             }
@@ -75,7 +89,9 @@
         }
 
         function getAlert(user, comp, resu) {
-            alert(`you chose ${user} and computer chose ${comp} and  ${resu}`);
+            alert(`you chose ${user} and computer chose ${comp} 
+             ${resu}
+             win:${saveScore.win}   tie:${saveScore.tie}   lost:${saveScore.lost}`);
             console.log(`you chose ${user} and computer chose ${comp} and  ${resu}`);
         }
 
